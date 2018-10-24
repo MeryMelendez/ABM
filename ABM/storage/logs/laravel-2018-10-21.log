@@ -1,0 +1,239 @@
+[2018-10-21 16:31:37] local.ERROR: The "--localhost" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--localhost\" option does not exist. at /root/dev/taller2018/vendor/symfony/console/Input/ArgvInput.php:217)
+[stacktrace]
+#0 /root/dev/taller2018/vendor/symfony/console/Input/ArgvInput.php(151): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('localhost', '0.0.0.0')
+#1 /root/dev/taller2018/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--localhost=0.0...')
+#2 /root/dev/taller2018/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /root/dev/taller2018/vendor/symfony/console/Command/Command.php(210): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#5 /root/dev/taller2018/vendor/symfony/console/Application.php(886): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /root/dev/taller2018/vendor/symfony/console/Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\ServeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /root/dev/taller2018/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /root/dev/taller2018/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2018-10-21 19:54:49] local.ERROR: Command "make:" is ambiguous.
+Did you mean one of these?
+    make:auth         Scaffold basic login and registration views and r...
+    make:channel      Create a new channel class
+    make:command      Create a new Artisan command
+    make:controller   Create a new controller class
+    make:event        Create a new event class
+    make:exception    Create a new custom exception class
+    make:factory      Create a new model factory
+    make:job          Create a new job class
+    make:listener     Create a new event listener class
+    make:mail         Create a new email class
+    make:middleware   Create a new middleware class
+    make:migration    Create a new migration file
+    make:model        Create a new Eloquent model class
+    make:notification Create a new notification class
+    make:observer     Create a new observer class
+    make:policy       Create a new policy class
+    make:provider     Create a new service provider class
+    make:request      Create a new form request class
+    make:resource     Create a new resource
+    make:rule         Create a new validation rule
+    make:seeder       Create a new seeder class
+    make:test         Create a new test class {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:\" is ambiguous.
+Did you mean one of these?
+    make:auth         Scaffold basic login and registration views and r...
+    make:channel      Create a new channel class
+    make:command      Create a new Artisan command
+    make:controller   Create a new controller class
+    make:event        Create a new event class
+    make:exception    Create a new custom exception class
+    make:factory      Create a new model factory
+    make:job          Create a new job class
+    make:listener     Create a new event listener class
+    make:mail         Create a new email class
+    make:middleware   Create a new middleware class
+    make:migration    Create a new migration file
+    make:model        Create a new Eloquent model class
+    make:notification Create a new notification class
+    make:observer     Create a new observer class
+    make:policy       Create a new policy class
+    make:provider     Create a new service provider class
+    make:request      Create a new form request class
+    make:resource     Create a new resource
+    make:rule         Create a new validation rule
+    make:seeder       Create a new seeder class
+    make:test         Create a new test class at /root/dev/taller2018/vendor/symfony/console/Application.php:664)
+[stacktrace]
+#0 /root/dev/taller2018/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('make:')
+#1 /root/dev/taller2018/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /root/dev/taller2018/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2018-10-21 19:57:36] local.ERROR: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "migrations" does not exist
+LINE 1: select max("batch") as aggregate from "migrations"
+                                              ^ (SQL: select max("batch") as aggregate from "migrations") {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42P01): SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation \"migrations\" does not exist
+LINE 1: select max(\"batch\") as aggregate from \"migrations\"
+                                              ^ (SQL: select max(\"batch\") as aggregate from \"migrations\") at /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: 42P01): SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation \"migrations\" does not exist
+LINE 1: select max(\"batch\") as aggregate from \"migrations\"
+                                              ^ at /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Connection.php:330)
+[stacktrace]
+#0 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select max(\"bat...', Array, Object(Closure))
+#1 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Connection.php(333): Illuminate\\Database\\Connection->run('select max(\"bat...', Array, Object(Closure))
+#2 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2027): Illuminate\\Database\\Connection->select('select max(\"bat...', Array, false)
+#3 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2015): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2499): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2016): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2426): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2376): Illuminate\\Database\\Query\\Builder->aggregate('max', Array)
+#8 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(138): Illuminate\\Database\\Query\\Builder->max('batch')
+#9 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(78): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getLastBatchNumber()
+#10 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(225): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getLast()
+#11 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(202): Illuminate\\Database\\Migrations\\Migrator->getMigrationsForRollback(Array)
+#12 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RollbackCommand.php(63): Illuminate\\Database\\Migrations\\Migrator->rollback(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\RollbackCommand->handle()
+#14 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Container/Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 /root/dev/taller2018/vendor/symfony/console/Command/Command.php(251): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 /root/dev/taller2018/vendor/symfony/console/Application.php(886): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /root/dev/taller2018/vendor/symfony/console/Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RollbackCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /root/dev/taller2018/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 /root/dev/taller2018/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2018-10-21 19:59:25] local.ERROR: SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation "migrations" does not exist
+LINE 1: select max("batch") as aggregate from "migrations"
+                                              ^ (SQL: select max("batch") as aggregate from "migrations") {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42P01): SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation \"migrations\" does not exist
+LINE 1: select max(\"batch\") as aggregate from \"migrations\"
+                                              ^ (SQL: select max(\"batch\") as aggregate from \"migrations\") at /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Connection.php:664, PDOException(code: 42P01): SQLSTATE[42P01]: Undefined table: 7 ERROR:  relation \"migrations\" does not exist
+LINE 1: select max(\"batch\") as aggregate from \"migrations\"
+                                              ^ at /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Connection.php:330)
+[stacktrace]
+#0 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Connection.php(624): Illuminate\\Database\\Connection->runQueryCallback('select max(\"bat...', Array, Object(Closure))
+#1 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Connection.php(333): Illuminate\\Database\\Connection->run('select max(\"bat...', Array, Object(Closure))
+#2 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2027): Illuminate\\Database\\Connection->select('select max(\"bat...', Array, false)
+#3 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2015): Illuminate\\Database\\Query\\Builder->runSelect()
+#4 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2499): Illuminate\\Database\\Query\\Builder->Illuminate\\Database\\Query\\{closure}()
+#5 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2016): Illuminate\\Database\\Query\\Builder->onceWithColumns(Array, Object(Closure))
+#6 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2426): Illuminate\\Database\\Query\\Builder->get(Array)
+#7 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(2376): Illuminate\\Database\\Query\\Builder->aggregate('max', Array)
+#8 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(138): Illuminate\\Database\\Query\\Builder->max('batch')
+#9 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Migrations/DatabaseMigrationRepository.php(78): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getLastBatchNumber()
+#10 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(225): Illuminate\\Database\\Migrations\\DatabaseMigrationRepository->getLast()
+#11 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Migrations/Migrator.php(202): Illuminate\\Database\\Migrations\\Migrator->getMigrationsForRollback(Array)
+#12 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Database/Console/Migrations/RollbackCommand.php(63): Illuminate\\Database\\Migrations\\Migrator->rollback(Array, Array)
+#13 [internal function]: Illuminate\\Database\\Console\\Migrations\\RollbackCommand->handle()
+#14 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(29): call_user_func_array(Array, Array)
+#15 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(87): Illuminate\\Container\\BoundMethod::Illuminate\\Container\\{closure}()
+#16 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(31): Illuminate\\Container\\BoundMethod::callBoundMethod(Object(Illuminate\\Foundation\\Application), Array, Object(Closure))
+#17 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Container/Container.php(564): Illuminate\\Container\\BoundMethod::call(Object(Illuminate\\Foundation\\Application), Array, Array, NULL)
+#18 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Command.php(183): Illuminate\\Container\\Container->call(Array)
+#19 /root/dev/taller2018/vendor/symfony/console/Command/Command.php(251): Illuminate\\Console\\Command->execute(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#20 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#21 /root/dev/taller2018/vendor/symfony/console/Application.php(886): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#22 /root/dev/taller2018/vendor/symfony/console/Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Database\\Console\\Migrations\\RollbackCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#23 /root/dev/taller2018/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#24 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#25 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#26 /root/dev/taller2018/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#27 {main}
+"} 
+[2018-10-21 20:00:35] local.ERROR: Command "migrate:" is ambiguous.
+Did you mean one of these?
+    migrate:fresh    Drop all tables and re-run all migrations
+    migrate:install  Create the migration repository
+    migrate:refresh  Reset and re-run all migrations
+    migrate:reset    Rollback all database migrations
+    migrate:rollback Rollback the last database migration
+    migrate:status   Show the status of each migration {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"migrate:\" is ambiguous.
+Did you mean one of these?
+    migrate:fresh    Drop all tables and re-run all migrations
+    migrate:install  Create the migration repository
+    migrate:refresh  Reset and re-run all migrations
+    migrate:reset    Rollback all database migrations
+    migrate:rollback Rollback the last database migration
+    migrate:status   Show the status of each migration at /root/dev/taller2018/vendor/symfony/console/Application.php:664)
+[stacktrace]
+#0 /root/dev/taller2018/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('migrate:')
+#1 /root/dev/taller2018/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /root/dev/taller2018/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2018-10-21 20:11:13] local.ERROR: The "--host:0.0.0.0" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--host:0.0.0.0\" option does not exist. at /root/dev/taller2018/vendor/symfony/console/Input/ArgvInput.php:217)
+[stacktrace]
+#0 /root/dev/taller2018/vendor/symfony/console/Input/ArgvInput.php(153): Symfony\\Component\\Console\\Input\\ArgvInput->addLongOption('host:0.0.0.0', NULL)
+#1 /root/dev/taller2018/vendor/symfony/console/Input/ArgvInput.php(82): Symfony\\Component\\Console\\Input\\ArgvInput->parseLongOption('--host:0.0.0.0')
+#2 /root/dev/taller2018/vendor/symfony/console/Input/Input.php(55): Symfony\\Component\\Console\\Input\\ArgvInput->parse()
+#3 /root/dev/taller2018/vendor/symfony/console/Command/Command.php(210): Symfony\\Component\\Console\\Input\\Input->bind(Object(Symfony\\Component\\Console\\Input\\InputDefinition))
+#4 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Command.php(170): Symfony\\Component\\Console\\Command\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Illuminate\\Console\\OutputStyle))
+#5 /root/dev/taller2018/vendor/symfony/console/Application.php(886): Illuminate\\Console\\Command->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#6 /root/dev/taller2018/vendor/symfony/console/Application.php(262): Symfony\\Component\\Console\\Application->doRunCommand(Object(Illuminate\\Foundation\\Console\\ServeCommand), Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 /root/dev/taller2018/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#8 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#9 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#10 /root/dev/taller2018/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#11 {main}
+"} 
+[2018-10-21 20:19:09] local.ERROR: Command "make:migrate" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:migrate\" is not defined.
+
+Did you mean one of these?
+    make:auth
+    make:channel
+    make:command
+    make:controller
+    make:event
+    make:exception
+    make:factory
+    make:job
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:observer
+    make:policy
+    make:provider
+    make:request
+    make:resource
+    make:rule
+    make:seeder
+    make:test at /root/dev/taller2018/vendor/symfony/console/Application.php:632)
+[stacktrace]
+#0 /root/dev/taller2018/vendor/symfony/console/Application.php(226): Symfony\\Component\\Console\\Application->find('make:migrate')
+#1 /root/dev/taller2018/vendor/symfony/console/Application.php(145): Symfony\\Component\\Console\\Application->doRun(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#2 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Console/Application.php(89): Symfony\\Component\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#3 /root/dev/taller2018/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(122): Illuminate\\Console\\Application->run(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#4 /root/dev/taller2018/artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
